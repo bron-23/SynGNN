@@ -1,0 +1,18 @@
+2025-07-26 21:34:53,292 - logger.py:50 - --- Starting training for ethanol ---
+2025-07-26 21:34:53,292 - logger.py:50 - Namespace(amp=True, batch_size=400, clip_grad=1.0, contrastive_aug_mask_ratio=0.15, contrastive_loss_weight=0.1, contrastive_mask_token_idx=0, contrastive_prioritize_heteroatoms=False, contrastive_projection_dim=128, contrastive_temp=0.1, cooldown_epochs=10, data_path='data/md17', decay_rate=0.1, delta_frame=3000, device='cuda:0', drop_path=0.0, empp_atom_type_embed_irreps='16x0e', empp_loss_weight=1.0, empp_num_mask=1, empp_pos_pred_num_s2_channels=32, empp_pos_pred_res_s2grid=100, empp_pos_pred_temp_label=0.1, empp_pos_pred_temp_softmax=0.1, empp_prioritize_heteroatoms=True, empp_ssp_feature_dim='16x0e', enable_contrastive=False, epochs=500, exp_name='md17_final_run_20250726_213450', logger=<logger.FileLogger object at 0x7f9572fd3b50>, loss='l2', lr=0.0005, max_test_samples=2000, max_train_samples=100000, max_val_samples=2000, min_lr=1e-06, model_name='graph_attention_transformer_nonlinear_l2', molecule_type='ethanol', momentum=0.9, num_basis=128, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='outputs/md17_final_run_20250726_213450', patience_epochs=10, pin_mem=True, print_freq=50, radius=5.0, sched='cosine', seed=42, ssp=False, warmup_epochs=10, warmup_lr=1e-06, weight_decay=0.0001, workers=8)
+2025-07-26 21:34:53,292 - logger.py:50 - Loading datasets...
+2025-07-26 21:34:53,312 - logger.py:50 - Creating model...
+2025-07-26 21:35:01,689 - logger.py:50 - Number of params: 3,136,066
+2025-07-26 21:35:05,212 - logger.py:50 - Epoch: [0][0/248]	Total Loss: 0.37681	Main MSE (x10^-2): 37.6813	LR: 1.00e-06
+2025-07-26 21:37:00,749 - logger.py:50 - Epoch: [0][50/248]	Total Loss: 0.37181	Main MSE (x10^-2): 37.1811	LR: 1.00e-06
+2025-07-26 21:38:39,292 - logger.py:50 - Epoch: [0][100/248]	Total Loss: 0.37017	Main MSE (x10^-2): 37.0174	LR: 1.00e-06
+2025-07-26 21:40:17,807 - logger.py:50 - Epoch: [0][150/248]	Total Loss: 0.36815	Main MSE (x10^-2): 36.8152	LR: 1.00e-06
+2025-07-26 21:41:56,772 - logger.py:50 - Epoch: [0][200/248]	Total Loss: 0.36578	Main MSE (x10^-2): 36.5780	LR: 1.00e-06
+2025-07-26 21:43:29,925 - logger.py:50 - Epoch: [0][247/248]	Total Loss: 0.36369	Main MSE (x10^-2): 36.3690	LR: 1.00e-06
+2025-07-26 21:43:29,970 - logger.py:50 - Epoch 0 Training Summary: Avg Total Loss: 0.36369, Avg Main MSE: 0.36369, Time: 508.28s
+2025-07-26 21:43:44,000 - logger.py:50 - *** New Best Val MSE (x10^-2): 34.8713, Corresponding Test MSE (x10^-2): 34.1651 at Epoch 0 ***
+2025-07-26 21:43:44,051 - logger.py:50 - Epoch 0 Summary | Train MSE (x10^-2): 36.3690 | Val MSE (x10^-2): 34.8713 | Time: 522.36s
+2025-07-26 21:43:46,435 - logger.py:50 - Epoch: [1][0/248]	Total Loss: 0.35237	Main MSE (x10^-2): 35.2366	LR: 1.00e-06
+2025-07-26 21:45:25,485 - logger.py:50 - Epoch: [1][50/248]	Total Loss: 0.34683	Main MSE (x10^-2): 34.6826	LR: 1.00e-06
+2025-07-26 21:47:04,667 - logger.py:50 - Epoch: [1][100/248]	Total Loss: 0.34288	Main MSE (x10^-2): 34.2884	LR: 1.00e-06
+2025-07-26 21:48:44,137 - logger.py:50 - Epoch: [1][150/248]	Total Loss: 0.34130	Main MSE (x10^-2): 34.1295	LR: 1.00e-06

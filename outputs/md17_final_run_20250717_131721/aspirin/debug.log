@@ -1,0 +1,35 @@
+2025-07-17 13:17:24,672 - logger.py:50 - --- Starting training for aspirin ---
+2025-07-17 13:17:24,672 - logger.py:50 - Namespace(amp=False, batch_size=16, clip_grad=1.0, contrastive_aug_mask_ratio=0.15, contrastive_loss_weight=0.1, contrastive_mask_token_idx=0, contrastive_prioritize_heteroatoms=False, contrastive_projection_dim=128, contrastive_temp=0.1, cooldown_epochs=10, data_path='data/md17', decay_rate=0.1, delta_frame=3000, device='cuda:0', drop_path=0.0, empp_atom_type_embed_irreps='16x0e', empp_loss_weight=1.0, empp_num_mask=1, empp_pos_pred_num_s2_channels=32, empp_pos_pred_res_s2grid=100, empp_pos_pred_temp_label=0.1, empp_pos_pred_temp_softmax=0.1, empp_prioritize_heteroatoms=True, empp_ssp_feature_dim='16x0e', enable_contrastive=False, epochs=500, exp_name='md17_final_run_20250717_131721', logger=<logger.FileLogger object at 0x7fecc22f4b20>, loss='l2', lr=0.0001, max_test_samples=2000, max_train_samples=500, max_val_samples=2000, min_lr=1e-06, model_name='graph_attention_transformer_nonlinear_l2', molecule_type='aspirin', momentum=0.9, num_basis=128, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='outputs/md17_final_run_20250717_131721', patience_epochs=10, pin_mem=True, print_freq=50, radius=5.0, sched='cosine', seed=42, ssp=True, warmup_epochs=10, warmup_lr=1e-06, weight_decay=1e-06, workers=8)
+2025-07-17 13:17:24,673 - logger.py:50 - Loading datasets...
+2025-07-17 13:17:24,680 - logger.py:50 - Creating model...
+2025-07-17 13:17:33,296 - logger.py:50 - Number of params: 3,205,881
+2025-07-17 13:17:37,803 - logger.py:50 - Epoch: [0][0/30]	Total Loss: 2.96921	Main MSE (x10^-2): 296.9213	LR: 1.00e-06
+2025-07-17 13:17:37,803 - logger.py:50 - Epoch: [0][0/30]	Loss: 2.96921	EMPP_Raw: 2.71962
+2025-07-17 13:18:54,743 - logger.py:50 - Epoch: [0][29/30]	Total Loss: 2.74808	Main MSE (x10^-2): 274.8076	LR: 1.00e-06
+2025-07-17 13:18:54,743 - logger.py:50 - Epoch: [0][29/30]	Loss: 2.74808	EMPP_Raw: 2.50377
+2025-07-17 13:18:54,770 - logger.py:50 - Epoch 0 Training Summary: Avg Total Loss: 2.74808, Avg Main MSE: 2.74808, Time: 81.47s
+2025-07-17 13:21:50,146 - logger.py:50 - *** New Best Val MSE (x10^-2): 24.2588, Corresponding Test MSE (x10^-2): 24.3969 at Epoch 0 ***
+2025-07-17 13:21:50,191 - logger.py:50 - Epoch 0 Summary | Train MSE (x10^-2): 274.8076 | Val MSE (x10^-2): 24.2588 | Time: 256.89s
+2025-07-17 13:21:53,013 - logger.py:50 - Epoch: [1][0/30]	Total Loss: 2.68054	Main MSE (x10^-2): 268.0544	LR: 1.00e-06
+2025-07-17 13:21:53,013 - logger.py:50 - Epoch: [1][0/30]	Loss: 2.68054	EMPP_Raw: 2.49309
+2025-07-17 13:23:06,115 - logger.py:50 - Epoch: [1][29/30]	Total Loss: 2.57024	Main MSE (x10^-2): 257.0237	LR: 1.00e-06
+2025-07-17 13:23:06,115 - logger.py:50 - Epoch: [1][29/30]	Loss: 2.57024	EMPP_Raw: 2.32680
+2025-07-17 13:23:06,154 - logger.py:50 - Epoch 1 Training Summary: Avg Total Loss: 2.57024, Avg Main MSE: 2.57024, Time: 75.96s
+2025-07-17 13:26:01,397 - logger.py:50 - *** New Best Val MSE (x10^-2): 24.1961, Corresponding Test MSE (x10^-2): 24.3341 at Epoch 1 ***
+2025-07-17 13:26:01,490 - logger.py:50 - Epoch 1 Summary | Train MSE (x10^-2): 257.0237 | Val MSE (x10^-2): 24.1961 | Time: 251.30s
+2025-07-17 13:26:04,268 - logger.py:50 - Epoch: [2][0/30]	Total Loss: 2.49913	Main MSE (x10^-2): 249.9127	LR: 1.09e-05
+2025-07-17 13:26:04,269 - logger.py:50 - Epoch: [2][0/30]	Loss: 2.49913	EMPP_Raw: 2.24299
+2025-07-17 13:27:17,490 - logger.py:50 - Epoch: [2][29/30]	Total Loss: 2.14962	Main MSE (x10^-2): 214.9620	LR: 1.09e-05
+2025-07-17 13:27:17,490 - logger.py:50 - Epoch: [2][29/30]	Loss: 2.14962	EMPP_Raw: 1.91022
+2025-07-17 13:27:17,536 - logger.py:50 - Epoch 2 Training Summary: Avg Total Loss: 2.14962, Avg Main MSE: 2.14962, Time: 76.04s
+2025-07-17 13:30:13,605 - logger.py:50 - *** New Best Val MSE (x10^-2): 23.4538, Corresponding Test MSE (x10^-2): 23.5898 at Epoch 2 ***
+2025-07-17 13:30:13,652 - logger.py:50 - Epoch 2 Summary | Train MSE (x10^-2): 214.9620 | Val MSE (x10^-2): 23.4538 | Time: 252.16s
+2025-07-17 13:30:16,462 - logger.py:50 - Epoch: [3][0/30]	Total Loss: 2.00630	Main MSE (x10^-2): 200.6305	LR: 2.08e-05
+2025-07-17 13:30:16,462 - logger.py:50 - Epoch: [3][0/30]	Loss: 2.00630	EMPP_Raw: 1.77984
+2025-07-17 13:31:30,765 - logger.py:50 - Epoch: [3][29/30]	Total Loss: 1.87379	Main MSE (x10^-2): 187.3793	LR: 2.08e-05
+2025-07-17 13:31:30,766 - logger.py:50 - Epoch: [3][29/30]	Loss: 1.87379	EMPP_Raw: 1.64442
+2025-07-17 13:31:30,818 - logger.py:50 - Epoch 3 Training Summary: Avg Total Loss: 1.87379, Avg Main MSE: 1.87379, Time: 77.16s
+2025-07-17 13:34:28,203 - logger.py:50 - *** New Best Val MSE (x10^-2): 22.8428, Corresponding Test MSE (x10^-2): 22.9661 at Epoch 3 ***
+2025-07-17 13:34:28,261 - logger.py:50 - Epoch 3 Summary | Train MSE (x10^-2): 187.3793 | Val MSE (x10^-2): 22.8428 | Time: 254.61s
+2025-07-17 13:34:30,994 - logger.py:50 - Epoch: [4][0/30]	Total Loss: 1.74290	Main MSE (x10^-2): 174.2898	LR: 3.07e-05
+2025-07-17 13:34:30,994 - logger.py:50 - Epoch: [4][0/30]	Loss: 1.74290	EMPP_Raw: 1.51178
